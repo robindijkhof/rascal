@@ -16,8 +16,28 @@ public void exercise6(){
 
 
 	println("(6a)");
-	println(x | x <- eu)
+	println({ x | x <- eu, /s/i := x });
+	println("(6b)");
+	println({ x | x <- eu, /e.e/i := x });
+	println("(6c)");
+	
+	println("(6d)");
+	
+	println("(6e)");
+	
+	println("(6f)");
+	
+}
 
+public rel[int, int] delers(int maxnum) {
+   return { <a, b> | a <- [1..maxnum], b <- [1..a+1], a%b==0 };
+}
+
+public void exercise7() {
+	println("(7a)");
+	println(delers(100));
+	
+	
 }
 
 
