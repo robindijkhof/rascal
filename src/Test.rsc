@@ -5,8 +5,13 @@ import List;
 import Map;
 import Relation;
 import Set;
-
 import analysis::graphs::Graph;
+import util::Resources;
+import lang::java::jdt::m3::Core;
+import lang::java::m3::AST;
+import vis::Figure;
+import vis::Render;
+import vis::KeySym;
 
 
 public void exercise5() {
@@ -67,7 +72,18 @@ public void exercise8() {
 	println("(8c)");
 	println(top(graph));
 	
+	println("(8d)");
+	println((graph+)["A"]);
 	
+	println("(8e)");
+	println(alles - (graph*)["C"]);
+	
+	println("(8f)");
+	println((a:size(invert(graph)[a]) | a <- alles));
+}
+
+public void exercise9(){
+	Resource jabber = getProject(|project://JabberPoint/|);
 
 }
 
